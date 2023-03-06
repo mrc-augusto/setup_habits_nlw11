@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    color: #fff;
+    background-color: #09090a;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.8rem;
+    position: fixed;
+    width: 100%;
+    background-color: #09090a;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 1.2rem;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 125%;
+    border-radius: 8px;
+    border: 1px solid #8b5cf6;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button div{
+    font-size: 1.6rem;
+}
+
+#form-habits{
+    display: flex;
+    width: fit-content;
+    padding: 18.2rem 4.8rem 4.8rem;
+}
+
+.habits{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 6rem;
+}
+
+.habit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    font-size: 3.2rem;
+}
+
+.days{
+    display: flex;
+    gap: 4.8rem;
+    margin-left: 3.2rem;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.day div{
+    margin-bottom: .8rem;
+    color: #a1a1aa;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-size: 2rem;
+
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 6.4rem;
+    height: 6.4rem;
+    border: 2px solid #27272a;
+    border-radius: 8px;
+    background-color: #18181b;
+}
+
+input:checked{
+    border: 2px solid #a78bfa;
+    background-color: #8b5cf6;
+}
+
+@media (max-width: 570px){
+    button div{
+        display: none;
+    }
+}
